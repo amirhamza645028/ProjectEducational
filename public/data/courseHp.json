@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "title": "FCPS P-I Medicine",
+    "subtitle": "",
+    "icon": "graduation",
+    "linkText": "ব্যাচগুলো দেখুন"
+  },
+  {
+    "id": 2,
+    "title": "FCPS P-I Surgery",
+    "subtitle": "",
+    "icon": "graduation",
+    "linkText": "ব্যাচগুলো দেখুন"
+  },
+  {
+    "id": 3,
+    "title": "FCPS P-I Paediatrics",
+    "subtitle": "",
+    "icon": "graduation",
+    "linkText": "ব্যাচগুলো দেখুন"
+  },
+  {
+    "id": 4,
+    "title": "FCPS P-I Obs & Gynae",
+    "subtitle": "",
+    "icon": "graduation",
+    "linkText": "ব্যাচগুলো দেখুন"
+  },
+  {
+    "id": 5,
+    "title": "FCPS P-I Foundation",
+    "subtitle": "(Part-I Other Discipline)",
+    "icon": "graduation",
+    "linkText": "ব্যাচগুলো দেখুন"
+  },
+  {
+    "id": 6,
+    "title": "Residency",
+    "subtitle": "",
+    "icon": "graduation",
+    "linkText": "ব্যাচগুলো দেখুন"
+  },
+  {
+    "id": 7,
+    "title": "M.Phil & Diploma",
+    "subtitle": "",
+    "icon": "graduation",
+    "linkText": "ব্যাচগুলো দেখুন"
+  },
+  {
+    "id": 8,
+    "title": "MPH",
+    "subtitle": "",
+    "icon": "graduation",
+    "linkText": "ব্যাচগুলো দেখুন"
+  },
+  {
+    "id": 9,
+    "title": "Combined",
+    "subtitle": "",
+    "icon": "graduation",
+    "linkText": "ব্যাচগুলো দেখুন"
+  },
+  {
+    "id": 10,
+    "title": "Outlier",
+    "subtitle": "(MRCP, CS, COG, CPCH)",
+    "icon": "graduation",
+    "linkText": "ব্যাচগুলো দেখুন"
+  },
+  {
+    "id": 11,
+    "title": "BMDC Licensing",
+    "subtitle": "",
+    "icon": "graduation",
+    "linkText": "ব্যাচগুলো দেখুন"
+  }
+]

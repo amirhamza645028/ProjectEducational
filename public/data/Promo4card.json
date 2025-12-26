@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "tag": "GENESIS PG",
+    "title": "Phase A & B, Diploma Final, Midterm, FCPS Part-II & MCPS-এর প্রস্তুতি নিতে চান?",
+    "buttonText": "See Courses",
+    "image": "/images/genesis.png",
+    "gradient": "from-sky-100 to-blue-200"
+  },
+  {
+    "id": 2,
+    "tag": "BCS Care",
+    "title": "আপনি কি বিসিএস নিয়ে ভাবছেন?",
+    "buttonText": "See Courses",
+    "image": "/images/bcs.png",
+    "gradient": "from-yellow-100 to-pink-200"
+  },
+  {
+    "id": 3,
+    "tag": "Dentistry",
+    "title": "দক্ষ চিকিৎসক হিসেবে ক্যারিয়ার গড়তে চান?",
+    "buttonText": "See Courses",
+    "image": "/images/dentistry.png",
+    "gradient": "from-lime-100 to-green-200"
+  },
+  {
+    "id": 4,
+    "tag": "GCPSC",
+    "title": "ক্যারিয়ার গাইডলাইন নিয়ে চিন্তিত?",
+    "buttonText": "পরামর্শ নিন",
+    "image": "/images/guidance.png",
+    "gradient": "from-teal-100 to-cyan-200"
+  }
+]

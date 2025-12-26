@@ -1,0 +1,36 @@
+[{
+    "id": 1,
+    "title": "FCPS",
+    "icon": "graduation",
+    "linkText": "ব্যাচগুলো দেখুন"
+  },
+  {
+    "id": 2,
+    "title": "Residency",
+    "icon": "graduation",
+    "linkText": "ব্যাচগুলো দেখুন"
+  },
+  {
+    "id": 3,
+    "title": "M.Phil/Diploma",
+    "icon": "graduation",
+    "linkText": "ব্যাচগুলো দেখুন"
+  },
+  {
+    "id": 4,
+    "title": "MPH",
+    "icon": "graduation",
+    "linkText": "ব্যাচগুলো দেখুন"
+  },
+  {
+    "id": 5,
+    "title": "Comibned",
+    "icon": "graduation",
+    "linkText": "ব্যাচগুলো দেখুন"
+  },
+  {
+    "id": 6,
+    "title": "Outline",
+    "icon": "graduation",
+    "linkText": "ব্যাচগুলো দেখুন"
+  }]

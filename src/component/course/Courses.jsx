@@ -27,9 +27,9 @@ function Courses() {
   return (
     <div>
         <Heading heading={"আপনার কাঙ্খিত ব্যাচটি খুঁজে নিন"} subheading={"নিচের ক্যাটাগরিতে প্রবেশ করে আপনার পছন্দ মত ব্যাচে এনরোল করুন"}></Heading>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mx-6'>
           {courses.map(courses =>(
-            <Course key={courses.id} course={courses}></Course>
+            <Course  key={courses.id} course={courses}></Course>
           ))}
         </div>
 

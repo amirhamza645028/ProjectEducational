@@ -6,7 +6,7 @@ import Navber1 from '../Navber/Navber1'
 
 function Mainlayout() {
   return (
-    <div>
+    <div  className="min-h-screen  bg-[#e5eeee]">
         <Navber1></Navber1>
         <Navber2></Navber2>
         

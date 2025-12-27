@@ -28,33 +28,47 @@ const questions = [
 
 function Question() {
   return (
-    <div className="m-6 max-w-4xl mx-auto">
-      <Heading
-        heading="আপনার প্রশ্নগুলির উত্তর"
-        subheading="সচরাচর যেসব প্রশ্ন আমাদের সেবা গ্রহিতাগণ করে থাকেন"
-      />
+    <section className="px-6 py-14 bg-[#f5f7fb]">
+      <div className="max-w-4xl mx-auto">
+        <Heading
+          heading="আপনার প্রশ্নগুলির উত্তর"
+          subheading="সচরাচর যেসব প্রশ্ন আমাদের সেবা গ্রহিতাগণ করে থাকেন"
+        />
 
-      <div className="mt-6 space-y-4">
-        {questions.map((item, index) => (
-          <div
-            key={index}
-            tabIndex={0}
-            className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-lg"
-          >
-            <div className="collapse-title font-semibold flex justify-between items-center">
-              <span>{item.question}</span>
-              <span className="flex items-center gap-2 text-primary">
-                বিস্তারিত <FaArrowRight />
-              </span>
-            </div>
+        <div className="mt-8 space-y-5">
+          {questions.map((item, index) => (
+            <div
+              key={index}
+              tabIndex={0}
+              className="
+                collapse collapse-arrow
+                bg-white rounded-2xl
+                border border-slate-200
 
-            <div className="collapse-content text-sm text-gray-600">
-              <p>{item.answer}</p>
+                shadow-[0_14px_40px_rgba(0,0,0,0.12)]
+                transition-all duration-300
+                hover:-translate-y-0.5
+                hover:shadow-[0_28px_80px_rgba(0,0,0,0.22)]
+              "
+            >
+              {/* TITLE */}
+              <div className="collapse-title font-semibold flex justify-between items-center text-slate-900">
+                <span className="pr-4">{item.question}</span>
+
+                <span className="flex items-center gap-2 text-blue-600 text-sm font-semibold">
+                  বিস্তারিত <FaArrowRight />
+                </span>
+              </div>
+
+              {/* CONTENT */}
+              <div className="collapse-content text-slate-600 text-sm leading-relaxed">
+                <p>{item.answer}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 

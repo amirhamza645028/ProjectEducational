@@ -1,9 +1,16 @@
-
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { FiCalendar, FiClock, FiUsers, FiMapPin, FiTag } from 'react-icons/fi';
 
 function CourseBatchSingleCard({course}) {
- return (
+  const navigate = useNavigate();
+
+  // Click handler - course details page এ navigate করবে
+  const handleKnowDetails = () => {
+    navigate(`/course/${course.id}`);
+  };
+
+  return (
     <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-transparent hover:-translate-y-1">
       {/* Gradient Header */}
       <div className={`h-32 bg-gradient-to-br ${course.color} relative overflow-hidden`}>
@@ -52,7 +59,10 @@ function CourseBatchSingleCard({course}) {
         </div>
 
         <div className="pt-3 border-t border-gray-100">
-          <button className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold py-2.5 px-4 rounded-xl transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] shadow-md hover:shadow-xl flex items-center justify-center gap-2">
+          <button 
+            onClick={handleKnowDetails}
+            className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold py-2.5 px-4 rounded-xl transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] shadow-md hover:shadow-xl flex items-center justify-center gap-2"
+          >
             <span>Know Details</span>
             <span className="text-lg">→</span>
           </button>
@@ -73,4 +83,4 @@ function CourseBatchSingleCard({course}) {
   );
 }
 
-export default CourseBatchSingleCard
+export default CourseBatchSingleCard;

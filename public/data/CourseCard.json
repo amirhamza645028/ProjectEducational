@@ -1,18 +1,21 @@
 [{
     "id": 1,
     "title": "FCPS",
+    "route": "/course/Fcps",
     "icon": "graduation",
     "linkText": "ব্যাচগুলো দেখুন"
   },
   {
     "id": 2,
     "title": "Residency",
+    "route": "/course/residency",
     "icon": "graduation",
     "linkText": "ব্যাচগুলো দেখুন"
   },
   {
     "id": 3,
     "title": "M.Phil/Diploma",
+    "route": "/course/mphil-diploma",    
     "icon": "graduation",
     "linkText": "ব্যাচগুলো দেখুন"
   },
@@ -20,17 +23,20 @@
     "id": 4,
     "title": "MPH",
     "icon": "graduation",
+    "route": "/course/mph",
     "linkText": "ব্যাচগুলো দেখুন"
   },
   {
     "id": 5,
     "title": "Comibned",
     "icon": "graduation",
+    "route": "/course/combined",
     "linkText": "ব্যাচগুলো দেখুন"
   },
   {
     "id": 6,
     "title": "Outline",
     "icon": "graduation",
+    "route": "/course/outline",
     "linkText": "ব্যাচগুলো দেখুন"
   }]

@@ -5,7 +5,7 @@ import PromoCard from './PromoCard'
 
 function PromoCards() {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 gap-6 my-6'>
+    <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mx-6 '>
        {promocard.map(Pc=>(
         <PromoCard key={Pc.id} sendPc={Pc}></PromoCard>
        ))}

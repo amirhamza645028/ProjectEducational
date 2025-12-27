@@ -1,5 +1,4 @@
 // Navber2.jsx - React Router সহ সম্পূর্ণ কাজ করবে
-import Marquee from "react-fast-marquee";
 import { NavLink, useNavigate } from 'react-router-dom';
 
 function Navber2() {
@@ -8,8 +7,8 @@ function Navber2() {
   // NavLink এর জন্য active class
   const navLinkStyle = ({ isActive }) => {
     return isActive 
-      ? "font-bold text-blue-600 bg-blue-50 px-3 py-2 rounded-lg shadow-sm transition-all"
-      : "text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-lg transition-all";
+      ? "font-bold text-blue-600 bg-blue-50 px-3 py-2 rounded-lg shadow-sm transition-all font-bold"
+      : "text-gray-900 hover:text-blue-600 hover:bg-blue-50 px-3 py-2  rounded-lg transition-all font-bold ";
   };
 
   // Course click handler - navigate to course page
@@ -21,14 +20,14 @@ function Navber2() {
     <>
       <li>
         <details>
-          <summary className="font-medium text-gray-700 hover:text-blue-600 cursor-pointer px-3 py-2">
+          <summary className="font-medium  text-gray-900 hover:text-blue-600 cursor-pointer px-3 py-2">
             Courses ▼
           </summary>
-          <ul className="p-2 bg-white w-48 shadow-lg rounded-lg z-50 border border-gray-200">
+          <ul className="p-2 bg-white w-48 shadow-lg rounded-lg z-50 border border-gray-900">
             <li>
               <button 
                 onClick={() => handleCourseClick('fcps')}
-                className="w-full text-left block hover:bg-blue-50 p-2 rounded transition-all text-gray-700 hover:text-blue-600"
+                className="w-full text-left block hover:bg-blue-50 p-2 rounded transition-all text-gray-700 hover:text-blue-600 border-b-cyan-400 border-b-2 " 
               >
                 FCPS
               </button>
@@ -36,7 +35,7 @@ function Navber2() {
             <li>
               <button 
                 onClick={() => handleCourseClick('residency')}
-                className="w-full text-left block hover:bg-blue-50 p-2 rounded transition-all text-gray-700 hover:text-blue-600"
+                className="w-full text-left block hover:bg-blue-50 p-2 border-b-cyan-400 border-b-2 rounded transition-all text-gray-700 hover:text-blue-600 "
               >
                 Residency
               </button>
@@ -44,7 +43,7 @@ function Navber2() {
             <li>
               <button 
                 onClick={() => handleCourseClick('mphil-diploma')}
-                className="w-full text-left block hover:bg-blue-50 p-2 rounded transition-all text-gray-700 hover:text-blue-600"
+                className="w-full text-left block hover:bg-blue-50 p-2 rounded transition-all text-gray-700 hover:text-blue-600 border-b-cyan-400 border-b-2 "
               >
                 M.Phil/Diploma
               </button>
@@ -52,7 +51,7 @@ function Navber2() {
             <li>
               <button 
                 onClick={() => handleCourseClick('mph')}
-                className="w-full text-left block hover:bg-blue-50 p-2 rounded transition-all text-gray-700 hover:text-blue-600"
+                className="w-full text-left block hover:bg-blue-50 p-2 rounded transition-all text-gray-700 hover:text-blue-600 border-b-cyan-400 border-b-2 "
               >
                 MPH
               </button>
@@ -60,7 +59,7 @@ function Navber2() {
             <li>
               <button 
                 onClick={() => handleCourseClick('combined')}
-                className="w-full text-left block hover:bg-blue-50 p-2 rounded transition-all text-gray-700 hover:text-blue-600"
+                className="w-full text-left block hover:bg-blue-50 p-2 rounded transition-all text-gray-700 hover:text-blue-600 border-b-cyan-400 border-b-2 "
               >
                 Combined
               </button>
@@ -68,7 +67,7 @@ function Navber2() {
             <li>
               <button 
                 onClick={() => handleCourseClick('outlier')}
-                className="w-full text-left block hover:bg-blue-50 p-2 rounded transition-all text-gray-700 hover:text-blue-600"
+                className="w-full text-left block hover:bg-blue-50 p-2 rounded transition-all text-gray-700 hover:text-blue-600 border-b-cyan-400 border-b-2 "
               >
                 Outlier
               </button>
@@ -97,7 +96,13 @@ function Navber2() {
           About
         </NavLink>
       </li>
-      <li>
+      
+       <li>
+        <NavLink to="/galary" className={navLinkStyle}>
+          Galary
+        </NavLink>
+      </li>
+       <li>
         <NavLink to="/quiz" className={navLinkStyle}>
           Quiz
         </NavLink>
@@ -106,8 +111,8 @@ function Navber2() {
   );
   
   return (
-    <div className="sticky top-0 z-50">
-      <div className="navbar bg-gradient-to-r from-white to-gray-50 shadow-lg border-b border-gray-200">
+    <div className="sticky top-0 z-50 border-b-cyan-400 border-b-2 ">
+      <div className="navbar bg-gradient-to-r bg-[#f1f5f53f] shadow-lg border-b border-gray-200">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -123,7 +128,7 @@ function Navber2() {
             to="/"
             className="btn btn-ghost text-xl font-bold text-blue-700 hover:text-blue-800"
           >
-            MediLearn
+            GENESIS
           </NavLink>
         </div>
         
@@ -143,13 +148,7 @@ function Navber2() {
         </div>
       </div>
 
-      <div className='bg-gradient-to-r from-red-50 to-pink-50 py-2 border-y border-gray-200'>
-        <Marquee speed={50} gradient={false} className="font-bold">
-          <span className="text-red-600 mx-4">📢 I can be a React component, multiple React components, or just some text.</span>
-          <span className="text-blue-600 mx-4">🎯 Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-          <span className="text-green-600 mx-4">🌟 Accusamus, nesciunt! Doloribus nemo asperiores ut est fugiat, exercitationem adipisci doloremque?</span>
-        </Marquee>
-      </div>
+      {/*  */}
     </div>
   );
 }

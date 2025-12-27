@@ -4,38 +4,71 @@ const About = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-sky-100 to-blue-200 flex items-center justify-center p-6">
-      <div className="max-w-5xl w-full bg-white/60 backdrop-blur-xl rounded-3xl shadow-xl p-10 grid md:grid-cols-2 gap-8">
-        
+    <section className="min-h-screen flex items-center justify-center px-6 
+      bg-gradient-to-br from-[#0f172a] via-[#1e3a8a] to-[#2563eb]">
+
+      <div className="
+        max-w-6xl w-full 
+        bg-white rounded-3xl 
+        shadow-[0_20px_60px_rgba(0,0,0,0.25)] 
+        p-10 md:p-14
+        grid md:grid-cols-2 gap-10
+        transition-all duration-500
+        hover:shadow-[0_30px_80px_rgba(37,99,235,0.35)]
+      ">
+
         {/* LEFT IMAGE */}
-        <div className="flex justify-center">
+        <div className="flex items-center justify-center">
           <img
             src="https://i.ibb.co/6g1Z0VZ/doctor.png"
             alt="Doctors"
-            className="max-h-[350px]"
+            className="
+              max-h-[380px]
+              transition-all duration-500
+              hover:scale-105
+              drop-shadow-xl
+            "
           />
         </div>
 
         {/* RIGHT CONTENT */}
-        <div>
-          <h2 className="text-3xl font-bold text-blue-800 mb-4">
-            Achieve your Goals with GENESIS
+        <div className="flex flex-col justify-center">
+          <span className="inline-block mb-4 px-4 py-1 text-sm font-semibold 
+            rounded-full bg-blue-100 text-blue-700 w-fit">
+            About GENESIS
+          </span>
+
+          <h2 className="text-4xl font-extrabold text-gray-900 leading-tight mb-6">
+            Achieve your Goals <br />
+            <span className="text-blue-600">with GENESIS</span>
           </h2>
 
-          <p className="text-gray-700 leading-relaxed mb-6">
-            GENESIS is physician’s friend. We help you grow step by step with
-            structured learning, exam preparation and confidence building.
+          <p className="text-gray-600 text-lg leading-relaxed mb-8">
+            GENESIS is a physician’s trusted companion. We guide you step by step
+            through structured learning, exam preparation, and confidence building —
+            so you can achieve success with clarity and discipline.
           </p>
 
-          <button
-            onClick={() => navigate("/dashboard")}
-            className="px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition"
-          >
-            Join Us
-          </button>
+          <div>
+            <button
+              onClick={() => navigate("/dashboard")}
+              className="
+                px-8 py-4 rounded-2xl text-white font-semibold text-lg
+                bg-gradient-to-r from-blue-600 to-indigo-600
+                shadow-lg
+                transition-all duration-300
+                hover:from-indigo-600 hover:to-blue-200
+                hover:scale-105
+                active:scale-95
+              "
+            >
+              Join Us Now →
+            </button>
+          </div>
         </div>
+
       </div>
-    </div>
+    </section>
   );
 };
 

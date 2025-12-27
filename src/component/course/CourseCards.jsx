@@ -24,7 +24,7 @@ function CourseCards() {
   }
   return (
     <div className='m-6'>
-        <Heading heading={"আপনার কাঙ্খিত ব্যাচটি খুঁজে নিন"} subheading={"নিচের ক্যাটাগরিতে প্রবেশ করুন"}></Heading>
+        <Heading heading={"..আপনার কাঙ্খিত ব্যাচটি খুঁজে নিন.."} subheading={"নিচের ক্যাটাগরিতে প্রবেশ করুন~"}></Heading>
            <div className='grid grid-cols-2 lg:grid-cols-3 gap-6'>
         {
             courseCard.map(CC =>(
